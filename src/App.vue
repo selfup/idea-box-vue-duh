@@ -31,12 +31,10 @@ export default {
       this.setIdeas()
     },
     updateBody(event, index) {
-      const text = event.target.textContent
-      this.updateIdea("body", text, index)
+      this.updateIdea("body", event.target.textContent, index)
     },
     updateTitle(event, index) {
-      const text = event.target.textContent
-      this.updateIdea("title", text, index)
+      this.updateIdea("title", event.target.textContent, index)
     },
     updateIdea(type, value, index) {
       this.ideas[index][type] = value
